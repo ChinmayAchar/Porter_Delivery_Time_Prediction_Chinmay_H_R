@@ -1,10 +1,22 @@
-🚚 Porter Delivery Time Estimation (Linear Regression)Author: Chinmay H RProject Type: Regression Analysis / Supply Chain AnalyticsTech Stack: Python (Scikit-Learn, Statsmodels, Pandas, Seaborn)(Above: Optimizing last-mile delivery is crucial for modern logistics)
+🚚 Porter Delivery Time Estimation (Linear Regression)
 
-📌 Project OverviewPorter, India's largest marketplace for intra-city logistics, strives to improve customer experience by providing accurate delivery time estimates1. Inaccurate estimates can lead to customer dissatisfaction or inefficient driver allocation.This project utilizes Linear Regression to predict the estimated_duration of a delivery based on real-world features such as the number of items, available dashers (drivers), and market conditions
+Author: Chinmay H R
+
+Project Type: Regression Analysis / Supply Chain AnalyticsTech 
+
+Stack: Python (Scikit-Learn, Statsmodels, Pandas, Seaborn)
+
+(Above: Optimizing last-mile delivery is crucial for modern logistics)
+
+📌 Project OverviewPorter, India's largest marketplace for intra-city logistics, strives to improve customer experience by providing accurate delivery time estimates
+
+1. Inaccurate estimates can lead to customer dissatisfaction or inefficient driver allocation.This project utilizes Linear Regression to predict the estimated_duration of a delivery based on real-world features such as the number of items, available dashers (drivers), and market conditions
 
 2.📂 Repository StructureLR_Delivery_Time_Pridiction_Chinmay_ H_R.ipynb: The core analysis notebook containing data cleaning, EDA, and model training.LR Delivery Time Prediction Chinmay H R.pdf: Detailed project report and presentation.dataset.csv: (Reference) The dataset containing historical delivery records.
 
-⚙️ Data Pipeline1. Data PreprocessingThe raw dataset required significant cleaning to handle real-world inconsistencies:Missing Values: Imputed nulls in store_primary_category and total_onshift_dashers using mode/mean imputation
+⚙️ Data Pipeline
+
+1. Data PreprocessingThe raw dataset required significant cleaning to handle real-world inconsistencies:Missing Values: Imputed nulls in store_primary_category and total_onshift_dashers using mode/mean imputation
 
 3.Feature Engineering:busy_dashers_ratio: Calculated as total_busy_dashers / total_onshift_dashers to measure fleet utilization.time_of_day: Extracted hour and day from created_at timestamps to capture traffic patterns
 
