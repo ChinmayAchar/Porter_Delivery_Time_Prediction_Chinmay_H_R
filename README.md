@@ -11,34 +11,29 @@ Stack: Python (Scikit-Learn, Statsmodels, Pandas, Seaborn)
 📌 Project OverviewPorter, India's largest marketplace for intra-city logistics, strives to improve customer experience by providing accurate delivery time estimates
 
 1. Inaccurate estimates can lead to customer dissatisfaction or inefficient driver allocation.This project utilizes Linear Regression to predict the estimated_duration of a delivery based on real-world features such as the number of items, available dashers (drivers), and market conditions
-
-2.📂 Repository StructureLR_Delivery_Time_Pridiction_Chinmay_ H_R.ipynb: The core analysis notebook containing data cleaning, EDA, and model training.LR Delivery Time Prediction Chinmay H R.pdf: Detailed project report and presentation.dataset.csv: (Reference) The dataset containing historical delivery records.
+2. 📂 Repository StructureLR_Delivery_Time_Pridiction_Chinmay_ H_R.ipynb: The core analysis notebook containing data cleaning, EDA, and model training.LR Delivery Time Prediction Chinmay H R.pdf: Detailed project report and presentation.dataset.csv: (Reference) The dataset containing historical delivery records.
 
 ⚙️ Data Pipeline
 
 1. Data PreprocessingThe raw dataset required significant cleaning to handle real-world inconsistencies:Missing Values: Imputed nulls in store_primary_category and total_onshift_dashers using mode/mean imputation
+2. Missing Values: Imputed nulls in store_primary_category and total_onshift_dashers using mode/mean imputation.
 
-3.Feature Engineering:busy_dashers_ratio: Calculated as total_busy_dashers / total_onshift_dashers to measure fleet utilization.time_of_day: Extracted hour and day from created_at timestamps to capture traffic patterns
+3. Feature Engineering:busy_dashers_ratio: Calculated as total_busy_dashers / total_onshift_dashers to measure fleet utilization.time_of_day: Extracted hour and day from created_at timestamps to capture traffic patterns
+4. Encoding: Applied Target Encoding and Frequency Encoding for high-cardinality categorical variables like market_id and store_id
 
-4.Encoding: Applied Target Encoding and Frequency Encoding for high-cardinality categorical variables like market_id and store_id
-
-5.2. Exploratory Data Analysis (EDA)We visualized the relationships between variables to understand cost drivers.Total Items vs. Duration: A positive correlation was observed; as the number of items increases, the delivery and handling time naturally increases
-
-6.Dashers Availability: Higher availability of dashers (total_onshift_dashers) generally correlates with lower delivery times, though the relationship is non-linear due to demand spikes
-
+5. Exploratory Data Analysis (EDA)We visualized the relationships between variables to understand cost drivers.Total Items vs. Duration: A positive correlation was observed; as the number of items increases, the delivery and handling time naturally increases
+6. Dashers Availability: Higher availability of dashers (total_onshift_dashers) generally correlates with lower delivery times, though the relationship is non-linear due to demand spikes
 7. Model BuildingWe implemented Ordinary Least Squares (OLS) and Linear Regression models.Baseline: Simple Linear Regression using total_outstanding_orders.Multivariate: Complex model including subtotal, num_distinct_items, and busy_dashers_ratio.Evaluation: The model was evaluated using RMSE (Root Mean Squared Error) and R² Score to ensure goodness of fit
-
-8.📊 Model PerformanceMetricScoreRMSE (Test Set)[Insert specific value from notebook output]R² Score[Insert specific value from notebook output]
-
-(Note: The model successfully captures the general trend, though outliers in "actual_delivery_time" suggest the need for robust regression or tree-based models in future iterations).
+8. 📊 Model PerformanceMetricScoreRMSE (Test Set)[Insert specific value from notebook output]R² Score[Insert specific value from notebook output]
+  (Note: The model successfully captures the general trend, though outliers in "actual_delivery_time" suggest the need for robust regression or tree-based models in future iterations).
 
 🚀 Key Insights for OperationsBased on the coefficients and EDA, the following insights were derived for Porter:Dasher Utilization is Key: The ratio of busy dashers is a strong predictor. High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
 
-9.Order Complexity: It's not just the count of items but the distinct number of items that drives up time (likely due to prep time at restaurants)
+1.Order Complexity: It's not just the count of items but the distinct number of items that drives up time (likely due to prep time at restaurants)
 
-10.Market Variance: Different market_id regions have distinct baseline delivery times, likely due to traffic and density differences
+2.Market Variance: Different market_id regions have distinct baseline delivery times, likely due to traffic and density differences
 
-11.🛠️ How to RunClone the repo:Bashgit clone https://github.com/yourusername/Porter-Delivery-Prediction.git
+3.🛠️ How to RunClone the repo:Bashgit clone https://github.com/yourusername/Porter-Delivery-Prediction.git
 
 Install dependencies:Bashpip install pandas numpy seaborn scikit-learn statsmodels
 
