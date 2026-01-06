@@ -29,14 +29,17 @@
   (Note: The model successfully captures the general trend, though outliers in "actual_delivery_time" suggest the need for robust regression or tree-based models in future iterations).
 
 ## 🚀 Key Insights for Operations. 
-### Based on the coefficients and EDA, the following insights were derived for Porter:Dasher Utilization is Key: The ratio of busy dashers is a strong predictor. High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
+### Based on the coefficients and EDA, the following insights were derived for Porter
+#### Dasher Utilization is Key
+#### The ratio of busy dashers is a strong predictor. 
+#### High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
 
-1.Order Complexity: It's not just the count of items but the distinct number of items that drives up time (likely due to prep time at restaurants)
+1. Order Complexity: It's not just the count of items but the distinct number of items that drives up time (likely due to prep time at restaurants)
 
-2.Market Variance: Different market_id regions have distinct baseline delivery times, likely due to traffic and density differences
+2. Market Variance: Different market_id regions have distinct baseline delivery times, likely due to traffic and density differences
 
-3.🛠️ How to RunClone the repo:Bashgit clone https://github.com/yourusername/Porter-Delivery-Prediction.git
+3.🛠️ How to RunClone the repo: Bashgit clone https://github.com/yourusername/Porter-Delivery-Prediction.git
 
-Install dependencies:Bashpip install pandas numpy seaborn scikit-learn statsmodels
+Install dependencies: Bash pip install pandas numpy seaborn scikit-learn statsmodels
 
-Launch Jupyter:Bashjupyter notebook "LR_Delivery_Time_Pridiction_Chinmay_ H_R.ipynb"
+Launch Jupyter: Bashjupyter notebook "LR_Delivery_Time_Pridiction_Chinmay_ H_R.ipynb"
