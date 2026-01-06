@@ -27,7 +27,8 @@
 8. 📊 Model PerformanceMetricScoreRMSE (Test Set)[Insert specific value from notebook output]R² Score[Insert specific value from notebook output]
   (Note: The model successfully captures the general trend, though outliers in "actual_delivery_time" suggest the need for robust regression or tree-based models in future iterations).
 
-## 🚀 Key Insights for OperationsBased on the coefficients and EDA, the following insights were derived for Porter:Dasher Utilization is Key: The ratio of busy dashers is a strong predictor. High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
+## 🚀 Key Insights for Operations. 
+Based on the coefficients and EDA, the following insights were derived for Porter:Dasher Utilization is Key: The ratio of busy dashers is a strong predictor. High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
 
 1.Order Complexity: It's not just the count of items but the distinct number of items that drives up time (likely due to prep time at restaurants)
 
