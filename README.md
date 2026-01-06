@@ -1,19 +1,19 @@
-🚚 Porter Delivery Time Estimation (Linear Regression)
+# 🚚 Porter Delivery Time Estimation (Linear Regression)
 
-Author: Chinmay H R
+### Author: Chinmay H R
 
-Project Type: Regression Analysis / Supply Chain AnalyticsTech 
+## Project Type: Regression Analysis / Supply Chain AnalyticsTech 
 
-Stack: Python (Scikit-Learn, Statsmodels, Pandas, Seaborn)
+## Stack: Python (Scikit-Learn, Statsmodels, Pandas, Seaborn)
 
 (Above: Optimizing last-mile delivery is crucial for modern logistics)
 
-📌 Project OverviewPorter, India's largest marketplace for intra-city logistics, strives to improve customer experience by providing accurate delivery time estimates
+## 📌 Project OverviewPorter, India's largest marketplace for intra-city logistics, strives to improve customer experience by providing accurate delivery time estimates
 
 1. Inaccurate estimates can lead to customer dissatisfaction or inefficient driver allocation.This project utilizes Linear Regression to predict the estimated_duration of a delivery based on real-world features such as the number of items, available dashers (drivers), and market conditions
 2. 📂 Repository StructureLR_Delivery_Time_Pridiction_Chinmay_ H_R.ipynb: The core analysis notebook containing data cleaning, EDA, and model training.LR Delivery Time Prediction Chinmay H R.pdf: Detailed project report and presentation.dataset.csv: (Reference) The dataset containing historical delivery records.
 
-⚙️ Data Pipeline
+## ⚙️ Data Pipeline
 
 1. Data PreprocessingThe raw dataset required significant cleaning to handle real-world inconsistencies:Missing Values: Imputed nulls in store_primary_category and total_onshift_dashers using mode/mean imputation
 2. Missing Values: Imputed nulls in store_primary_category and total_onshift_dashers using mode/mean imputation.
@@ -27,7 +27,7 @@ Stack: Python (Scikit-Learn, Statsmodels, Pandas, Seaborn)
 8. 📊 Model PerformanceMetricScoreRMSE (Test Set)[Insert specific value from notebook output]R² Score[Insert specific value from notebook output]
   (Note: The model successfully captures the general trend, though outliers in "actual_delivery_time" suggest the need for robust regression or tree-based models in future iterations).
 
-🚀 Key Insights for OperationsBased on the coefficients and EDA, the following insights were derived for Porter:Dasher Utilization is Key: The ratio of busy dashers is a strong predictor. High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
+## 🚀 Key Insights for OperationsBased on the coefficients and EDA, the following insights were derived for Porter:Dasher Utilization is Key: The ratio of busy dashers is a strong predictor. High utilization significantly delays orders, suggesting a need for dynamic pricing or driver incentives during peaks
 
 1.Order Complexity: It's not just the count of items but the distinct number of items that drives up time (likely due to prep time at restaurants)
 
